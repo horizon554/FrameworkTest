@@ -43,7 +43,7 @@ Pod::Spec.new do |spec|
 
   spec.source_files  = "TDSGlobalSDK/TDSSDK/TDSGlobalSDKCoreKit.framework/Headers/*.{h}", "TDSGlobalSDK/TDSSDK/TDSGlobalSDKLoginKit.framework/Headers/*.{h}","TDSGlobalSDK/TDSSDK/TDSGlobalSDKIAPKit.framework/Headers/*.{h}"
   # spec.exclude_files = "Classes/Exclude"
-  spec.vendored_frameworks = "TDSGlobalSDK/TDSSDK/*.{framework}","TDSGlobalSDK/Libs/Adjust/*.{framework}","TDSGlobalSDK/Libs/AppsFlyer/*.{framework}","TDSGlobalSDK/Libs/Facebook/*.{framework}","TDSGlobalSDK/Libs/Google/*.{framework}","TDSGlobalSDK/Libs/TapDB/*.{framework}","TDSGlobalSDK/Libs/TapTap/*.{framework}"
+  spec.vendored_frameworks = "TDSGlobalSDK/TDSSDK/*.{framework}","TDSGlobalSDK/Libs/Adjust/*.{framework}","TDSGlobalSDK/Libs/AppsFlyer/*.{framework}","TDSGlobalSDK/Libs/TapDB/*.{framework}","TDSGlobalSDK/Libs/TapTap/*.{framework}"
   # spec.public_header_files = "Classes/**/*.h"
 
 
@@ -68,7 +68,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.framework  = "SomeFramework"
-  spec.frameworks = "AdSupport", "LocalAuthentication","AuthenticationServices","SystemConfiguration","Accelerate","Webkit","SafariServices",
+  spec.frameworks = "AdSupport", "LocalAuthentication","AuthenticationServices","SystemConfiguration","Accelerate","Webkit","SafariServices"
 
     spec.library   = "c++"
   # spec.libraries = "iconv", "xml2"
@@ -83,6 +83,12 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
-
+  spec.dependency "FBSDKCoreKit", "~> 7.1.1"
+    spec.dependency "FBSDKLoginKit", "~> 7.1.1"
+  spec.dependency "FBSDKShareKit", "~> 7.1.1"
+  
+  
+  spec.dependency "GoogleSignIn"
+    spec.dependency "Firebase/Analytics"
+    spec.dependency "FirebaseMessaging"
 end
