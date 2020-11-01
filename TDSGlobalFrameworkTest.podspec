@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "TDSGlobalFrameworkTest"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "Test TDSGlobalFrameworks"
   spec.description  = <<-DESC
   Test for TDSGlobalFrameworks.
