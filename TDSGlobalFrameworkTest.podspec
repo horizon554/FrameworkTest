@@ -15,11 +15,11 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "FrameworkTest"
-  spec.version      = "0.0.1"
-  spec.summary      = "Test Frameworks"
+  spec.name         = "TDSGlobalFrameworkTest"
+  spec.version      = "0.0.2"
+  spec.summary      = "Test TDSGlobalFrameworks"
   spec.description  = <<-DESC
-  Test for TDSGlobalSDK.
+  Test for TDSGlobalFrameworks.
                    DESC
 
   spec.homepage     = "https://github.com/horizon554/FrameworkTest"
@@ -55,7 +55,7 @@ Pod::Spec.new do |spec|
   #  non-essential files like tests, examples and documentation.
   #
 
-  # spec.resource  = "icon.png"
+    spec.resource  = "TDSGlobalSDK/TDSSDK/TDSGlobalSDKResources.bundle"
   # spec.resources = "Resources/*.png"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
